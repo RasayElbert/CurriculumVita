@@ -1,6 +1,439 @@
-<!doctype html>
-<meta charset="utf-8">
-<title>Redirecting…</title>
-<meta http-equiv="refresh" content="0; url=Resume.html">
-<link rel="canonical" href="Resume.html">
-<p>If you are not redirected automatically, <a href="Resume.html">click here</a>.</p>
+<!DOCTYPE html>
+
+<html lang="en"> 
+<head> 
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Elbert C. Rasay - Portfolio</title>
+
+	<!-- Custom Stylesheet --> 
+	<link rel="stylesheet" href="style.css">
+
+	<!-- W3.CSS and Font Awesome --> 
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> 
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto"> 
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+	<style> 
+		html, body, h1, h2, h3, h4, h5, h6 { 
+			font-family: "Roboto", sans-serif 
+		} 
+
+		header { 
+			background-color: #009688; /* Changed from #1e1e1e to W3.CSS teal color */
+			color: #ffffff; 
+			padding: 10px; 
+			text-align: center; 
+			position: fixed; /* Change from relative to fixed */
+			top: 0; /* Position at the top */
+			width: 100%; /* Make it full width */
+			z-index: 1000; /* Ensure it stays on top of other content */
+			} 
+
+		/* Add padding to body to prevent content from hiding under the fixed header */
+		body {
+			padding-top: 130px; /* Adjust this value based on your header height */
+		}
+
+		header h1 { 
+			font-size: 2.5em; 
+			margin: 0; 
+			} 
+
+		header p { 
+			font-size: 1.2em; 
+			margin: 5px 0 15px; 
+			} 
+
+		nav a { 
+			color: #ffffff; 
+			margin: 0 15px; 
+			text-decoration: none; 
+			font-weight: bold; 
+			} 
+
+		nav a:hover { 
+			text-decoration: underline; } 
+		
+		/* Add these styles for the collapsible sections */
+.collapsible {
+  background-color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  position: relative;
+}
+
+.collapsible:after {
+  font-family: "Font Awesome 6 Free"; /* Updated to Font Awesome 6 */
+  content: "\f078"; /* fa-chevron-down */
+  color: #009688;
+  font-weight: 900; /* Required for solid icons */
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\f077"; /* fa-chevron-up */
+}
+
+.content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+}
+	</style> 
+</head>
+
+<body class="w3-light-grey">
+
+	<header> <h1>Elbert C. Rasay</h1> 
+		<p>App Developer</p> 
+		<nav> 
+			<a href="#about">About</a>
+			<a href="#projects">Projects</a> 
+			<a href="#contact">Contact</a> 
+		</nav> 
+	</header>
+
+	<!-- W3.CSS Template Section --> 
+	<section id="w3-template"> 
+	<div class="w3-content w3-margin-top" style="max-width:1400px;"> 
+		<div class="w3-row-padding"> 
+			<div class="w3-third"> 
+				<div class="w3-white w3-text-grey w3-card-4"> 
+					<div class="w3-display-container"> 
+					<img src="https://lh3.googleusercontent.com/a/ACg8ocLwiwfWjVYfExR4bxAbfCbfooAkxtYjAix_cGxGFSOe3j7-Txws=s432-c-no" style="width:100%" alt="Avatar"> 
+						<div class="w3-display-bottomleft w3-container w3-text-black"> 
+							<h2>Elbert C. Rasay</h2> 
+						</div>
+					</div> 
+					<div class="w3-container"> 
+						<p><i class="fas fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Application Developer</p> 
+						<p><i class="fas fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>Las Pinas, Metro Manila</p> 
+						<p><i class="fas fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>rasay.elbert@gmail.com</p> 
+						<p><i class="fas fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>+63922-820-2095</p> 
+						<p><i class="fab fa-linkedin fa-fw w3-margin-right w3-large w3-text-teal"></i><a href="https://ph.linkedin.com/in/elbert-rasay-372750136" target="_blank">LinkedIn Profile</a></p>
+						<p><i class="fab fa-github fa-fw w3-margin-right w3-large w3-text-teal"></i><a href="https://github.com/RasayElbert" target="_blank">GitHub Profile</a></p>
+						<hr> 
+						<p class="w3-large"><b><i class="fas fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Front-End</b>
+							</p> 
+							<p>HTML/CSS</p>
+								<div class="w3-light-grey w3-round-xlarge w3-small"> 
+									<div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:80%">80%</div> 
+							</div> 
+							<p>React.js</p>
+								<div class="w3-light-grey w3-round-xlarge w3-small"> 
+									<div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:65%">65%</div> 
+							</div> 
+							<p>Bootstrap.css </p>
+								<div class="w3-light-grey w3-round-xlarge w3-small"> 
+									<div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:60%"> 
+									<div class="w3-center w3-text-white">60%</div> 
+							</div> 
+							</div> 
+								<p>JavaScript</p> 
+								<div class="w3-light-grey w3-round-xlarge w3-small"> <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:60%">60%</div> 
+							</div> 
+								<br> 
+								<p class="w3-large w3-text-theme">
+									<b>
+								<i class="fas fa-globe fa-fw w3-margin-right w3-text-teal"></i>Back-End</b>
+								</p> 
+								<p>Microsoft SQL</p> 
+								<div class="w3-light-grey w3-round-xlarge w3-small"> 
+									<div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:75%">75%</div> 
+							</div>
+
+							<p>C#</p> 
+							<div class="w3-light-grey w3-round-xlarge w3-small"> 
+								<div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:70%">70%</div> 
+							</div>
+
+							<p>PHP</p> 
+							<div class="w3-light-grey w3-round-xlarge w3-small"> 
+								<div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:65%">65%</div> 
+							</div>
+
+							<p>Python</p> 
+							<div class="w3-light-grey w3-round-xlarge w3-small"> 
+								<div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:60%">60%</div> 
+							</div>
+								<br> 
+								<p class="w3-large"><b><i class="fas fa-mobile-alt fa-fw w3-margin-right w3-text-teal"></i>Mobile Development</b></p>
+
+							<p>Kotlin</p>
+							<div class="w3-light-grey w3-round-xlarge w3-small"> 
+   								<div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:70%">70%</div> 
+							</div>
+
+							<p>Java</p>
+							<div class="w3-light-grey w3-round-xlarge w3-small"> 
+   								<div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:65%">65%</div> 
+							</div>
+
+							<br>
+							<p class="w3-large"><b><i class="fas fa-tools fa-fw w3-margin-right w3-text-teal"></i>Tools & Platforms</b></p>
+
+							<p>Git/GitHub</p>
+							<div class="w3-light-grey w3-round-xlarge w3-small"> 
+	   							<div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:80%">80%</div> 
+							</div>
+
+							<p>Azure DevOps</p>
+							<div class="w3-light-grey w3-round-xlarge w3-small"> 
+    							<div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:70%">70%</div> 
+							</div>
+
+							<p>PowerApps</p>
+							<div class="w3-light-grey w3-round-xlarge w3-small"> 
+    							<div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:60%">60%</div> 
+							</div>
+								
+							<br> 
+						</div> 
+					</div>
+					<br> 
+				</div> 
+				<div class="w3-twothird">
+					<!--Work Experience--> 
+    				<div class="w3-container w3-card w3-white w3-margin-bottom"> 
+       					<h2 class="w3-text-grey w3-padding-16">
+           					<i class="fas fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>
+           					Work Experience
+       					</h2> 
+        
+       					<!-- REMAX Experience -->
+				        <div class="w3-container">
+        					<button class="collapsible w3-opacity">
+            					<h5 style="margin:0"><b>Junior Software Solutions Engineer | REMAX International Inc.</b></h5>
+            					<h6 class="w3-text-teal" style="margin:5px 0 0 0">
+                					<i class="fa fa-calendar fa-fw w3-margin-right"></i>
+                					May 2025 - 
+                					<span class="w3-tag w3-teal w3-round">Present</span>
+            					</h6>
+        					</button>
+        					<div class="content">
+            					<div style="padding: 0 18px;">
+                					<ul>
+                    					<li>Built Leave Management Android App using Kotlin/Java with PHP and MS SQL backend.</li>
+                    					<li>Developed Stock Transfer Management prototype in VB.NET with HTML/CSS/Bootstrap.</li>
+					                    <li>Enhanced Liquidation Reimbursement Form with business logic automation.</li>
+					                </ul>
+					            </div>
+					        </div>
+					        <hr>
+					    </div> 
+        
+				        <!-- COLLABERA Experience -->
+					    <div class="w3-container">
+					        <button class="collapsible w3-opacity">
+					            <h5 style="margin:0"><b>Software Engineer | COLLABERA DIGITAL</b></h5>
+					            <h6 class="w3-text-teal" style="margin:5px 0 0 0">
+					                <i class="fa fa-calendar fa-fw w3-margin-right"></i>
+					                Apr 2024 - Jun 2024
+					            </h6>
+					        </button>
+				    	    <div class="content">
+					            <div style="padding: 0 18px;">
+					                <ul>
+					                    <li>Resolved SAP C4C technical support tickets to meet client SLAs.</li>
+					                    <li>Completed intensive SAP C4C Bootcamp with final project presentation.</li>
+					                </ul>
+					            </div>
+					        </div>
+					        <hr>
+					    </div> 
+        
+				        <!-- ACCENTURE Experience -->
+				        <div class="w3-container"> 
+							<button class="collapsible w3-opacity">
+					            <h5 style="margin:0"><b>Applications Development Associate | ACCENTURE INC.</b></h5> 
+					            <h6 class="w3-text-teal" style="margin:5px 0 0 0">
+					                <i class="fa fa-calendar fa-fw w3-margin-right"></i>
+					                May 2022 - Oct 2023
+					            </h6>
+							</button>
+				    	    <div class="content">
+					            <div style="padding: 0 18px;">
+					                <ul>
+					                    <li>Enhanced <b>Power Apps Studio Tracker</b> by adding Modify tab for closed project status updates.</li>
+					                    <li>Collaborated in Agile environment with cross-functional teams to deliver timely updates.</li>
+					                </ul>
+					            </div>
+					        </div>
+				            <hr> 
+				        </div>
+						
+						<!-- Other Work Experience Section -->
+						<div class="w3-container"> 
+							<button class="collapsible w3-opacity">
+								<h5 style="margin:0"><b>Other Work Experiences</b></h5>
+								<h6 class="w3-text-teal" style="margin:5px 0 0 0">
+									<i class="fa fa-calendar fa-fw w3-margin-right"></i>
+									2017 - 2021
+								</h6>
+							</button>
+							<div class="content">
+					            <div style="padding: 0 18px;">
+					                <!-- SUPER JANI Experience -->
+							        <div class="w3-container"> 
+				            			<h5 class="w3-opacity">
+						    	            <b>IE Engineer | SUPER JANI GENERAL SERVICES</b>
+						        	    </h5> 
+							            <h6 class="w3-text-teal">
+							                <i class="fa fa-calendar fa-fw w3-margin-right"></i>
+							                Nov 2019 - Jan 2021
+							            </h6> 
+							            <p>Industrial Engineering duties focused on operational efficiency.</p> 
+							            <hr> 
+							        </div>
+
+								    <!-- PSI TECHNOLOGIES Experience -->
+								    <div class="w3-container"> 
+						        	<h5 class="w3-opacity">
+										<b>Engineering Roles | PSI TECHNOLOGIES INC.</b>
+					            </h5> 
+								<h6 class="w3-text-teal">
+					                <i class="fa fa-calendar fa-fw w3-margin-right"></i>
+					                Jul 2017 - Jul 2019
+					            </h6> 
+								<p><ul>
+									<li>New Product Introduction Engineer (Mar-Jul 2019)</li>
+									<li>Process Engineer (Feb 2018-Mar 2019)</li>
+									<li>Equipment Engineer - Cadet (Jul 2017-Feb 2018)</li>
+								</ul></p>
+    	        				<br> 
+        					</div>
+						</div>
+					</div>
+				</div>
+    		</div>  <!-- Closing tag for Work Experience section -->
+
+					<!--Educational Background-->
+					<div class="w3-container w3-card w3-white w3-margin-bottom"> 
+						<h2 class="w3-text-grey w3-padding-16">
+							<i class="fas fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>
+							Education
+						</h2> 
+						<div class="w3-container"> 
+							<h5 class="w3-opacity">
+								<b>University of Perpetual Help System – DALTA, Las Piñas</b>
+							</h5> 
+								
+							<h6 class="w3-text-teal">
+								<i class="fa fa-calendar fa-fw w3-margin-right"></i>
+								2012 - 2016
+							</h6> 
+							<p>Bachelor of Science Degree in Electronics Engineering, 2016</p>
+							<br> 
+						</div> 
+					</div>
+
+					<!--License and Certifications-->
+					<div class="w3-container w3-card w3-white w3-margin-bottom"> 						
+        				<h2 class="w3-text-grey w3-padding-16">
+            				<i class="fas fa-award fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>
+            				License and Certifications
+        				</h2>  
+        				<div class="w3-container">
+							<button class="collapsible w3-opacity">
+					            <h5 style="margin:0"><b>Philippines PRC Electronics Engineer License (2016-2023)</b></h5> 
+							</button>
+							<div class="content">
+								<div style="padding: 0 18px;">
+									<ul>
+										<li>Earned on: December 5, 2017</li>
+										<li>Expired on: May 22, 2022</li>
+										<li>Registration No: 0065722</li>
+									</ul>
+								</div>
+							</div>
+
+							<button class="collapsible w3-opacity">
+					            <h5 style="margin:0"><b>Microsoft Certified: Power Platform Fundamentals</b></h5> 
+							</button>
+							<div class="content">
+								<div style="padding: 0 18px;">
+									<ul>
+										<li>Credential ID: 90648A36AB321A11</li>
+										<li>Certification number: 5A8411-91BFFL</li>
+										<li>Earned on: October 5, 2022</li>
+										<li>Expired on: October 6, 2023 at 7:59 AM (UTC +08:00)</li>
+										<li>Skills measured:</li>
+										<ul>
+											<li>Configure Dynamics 365 Customer Insights – Journeys</li>
+											<li>Manage segments and preferences</li>
+											<li>Manage leads, contacts, and accounts</li>
+											<li>Manage marketing channels</li>
+											<li>Manage journeys</li>
+											<li>Manage events and webinars</li>
+										</ul>
+										<li><a href="https://learn.microsoft.com/api/credentials/share/en-us/RasayElbert-9386/90648A36AB321A11?sharingId=92A72D7236033E8F" target="_blank">View Certificate</a></li>
+
+									</ul>
+								</div>
+							</div>
+							
+							<button class="collapsible w3-opacity">
+					            <h5 style="margin:0"><b>Microsoft Certified: Azure Fundamentals</b></h5> 
+							</button>
+							<div class="content">
+								<div style="padding: 0 18px;">
+									<ul>
+										<li>Credential ID: 53FEFEFC90CD9C7A</li>
+										<li>Certification number: DBCY03-6524E7</li>
+										<li>Earned on: July 12, 2022</li>
+										<li>Skills measured:</li>
+										<ul>
+											<li>Describe cloud concepts</li>
+											<li>Describe Azure architecture and services</li>
+											<li>Describe Azure management and governance</li>
+										</ul>
+										<li><a href="https://learn.microsoft.com/api/credentials/share/en-us/RasayElbert-9386/53FEFEFC90CD9C7A?sharingId=92A72D7236033E8F" target="_blank">View Certificate</a></li>
+									</ul>
+								</div>
+							</div>
+            				<br>
+        				</div>
+					</div> 
+				</div>
+			</div>
+		</section>
+
+<footer class="w3-container w3-teal w3-center w3-margin-top">
+    <div class="w3-padding-16">
+        <p>© 2025 Elbert C. Rasay</p>
+        <p>
+            <a href="https://github.com/RasayElbert" class="w3-text-white w3-hover-opacity" target="_blank">
+                <i class="fab fa-github w3-large w3-margin-right"></i>GitHub
+            </a>
+            <span class="w3-margin-right w3-margin-left">|</span>
+            <a href="https://ph.linkedin.com/in/elbert-rasay-372750136" class="w3-text-white w3-hover-opacity" target="_blank">
+                <i class="fab fa-linkedin w3-large w3-margin-right"></i>LinkedIn
+            </a>
+        </p>
+        <p class="w3-small">Last updated: August 2025</p>
+    </div>
+</footer>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    var coll = document.getElementsByClassName("collapsible");
+    for (var i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.maxHeight) {
+                content.style.maxHeight = null;
+            } else {
+                content.style.maxHeight = content.scrollHeight + "px";
+            }
+        });
+    }
+});
+</script>
+</body> </html>
